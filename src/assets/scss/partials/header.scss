@@ -1,0 +1,21 @@
+@import "../function.scss";
+
+header {
+    padding: 10px;
+    background: $Black-121;
+    .header-area {
+        @include flexCustome(row, nowrap, null, space-between, null);
+
+        .menu-area {
+            @include flexCustome(row, nowrap, null, null, center, 25px);
+
+            .menu-item {
+                @include flexCustome(row, nowrap, null, null, null);
+
+                span {
+                    @include customFont(20px, 500, 110%, $White-FFF, 0.9, 0.8);
+                }
+            }
+        }
+    }
+}
